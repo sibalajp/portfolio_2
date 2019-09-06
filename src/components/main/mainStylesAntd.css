@@ -1,0 +1,41 @@
+.ant-tabs-bar {
+  border-bottom: transparent !important;
+}
+
+.ant-drawer-content-wrapper {
+  height: 70px !Important;
+}
+
+.port-header {
+  grid-area: port-header;
+  justify-self: start;
+}
+
+.project-1 {
+  grid-area: project-1;
+  justify-self: start;
+}
+
+.project-2 {
+  grid-area: project-2;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  width: 35px !important;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 30px !important;
+}
+
+.slick-track {
+  height: 85vh;
+}
+
+.ant-carousel .slick-slide {
+  position: relative;
+  text-align: center;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
