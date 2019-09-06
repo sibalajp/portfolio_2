@@ -6,17 +6,15 @@ export const MainContainer = styled.div`
   height: 100vh;
 `;
 
-export const PortfolioContainer = styled.div``;
+export const PortfolioContainer = styled.div`
+  width: 1100px;
+  margin: 0 auto;
+`;
 
 export const PortHeader = styled.div`
-  display: grid;
-  grid-template-columns: auto 40% 2% 40% auto;
-  grid-template-areas: ". port-header . . .";
+  padding-left: 22px;
+  text-align: left;
   font-size: 2rem;
 `;
 
-export const PortBody = styled.div`
-  display: grid;
-  grid-template-columns: auto 40% 2% 40% auto;
-  grid-template-areas: ". project-1 . project-2 .";
-`;
+export const PortBody = styled.div``;

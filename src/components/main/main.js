@@ -7,16 +7,9 @@ import {
 } from "./mainStyles";
 import { Carousel, Drawer, Modal, Tabs } from "antd";
 import "./mainStylesAntd.css";
-import Cliiiques from "../../img/cliiiques.png";
-import Weighbridge from "../../img/weighbridge.png";
-import Governance from "../../img/governance.png";
-import Inventory from "../../img/inventory.png";
-import Login from "../../img/login.png";
-import Map from "../../img/map.png";
-import Vino from "../../img/vino.png";
-import Package from "../../img/package.png";
-import Tracking from "../../img/tracking.png";
-import Test from "../../img/test.png";
+
+import Project1 from "../projects/project1";
+import Project2 from "../projects/project2";
 
 const { TabPane } = Tabs;
 
@@ -45,122 +38,10 @@ class Main extends Component {
                 <PortHeader>
                   <div className="port-header">Portfolio</div>
                 </PortHeader>
+
                 <PortBody>
-                  <div
-                    className="project-1"
-                    onMouseEnter={() => this.setState({ visible: true })}
-                    onMouseLeave={() => this.setState({ visible: false })}
-                    style={{ position: "relative", overflow: "hidden" }}
-                  >
-                    <img
-                      style={{
-                        width: 500,
-                        border: "1px solid orange"
-                      }}
-                      src={Cliiiques}
-                      alt="cliiques"
-                    />
-                    <Drawer
-                      placement="bottom"
-                      onClick={() => this.setState({ modalVisible: true })}
-                      closable={false}
-                      onClose={this.onClose}
-                      visible={this.state.visible}
-                      getContainer={false}
-                      style={{
-                        position: "absolute"
-                      }}
-                    >
-                      <p>Python | Django | MySQL</p>
-                    </Drawer>
-
-                    <Modal
-                      visible={this.state.modalVisible}
-                      onCancel={this.hideModal}
-                      closable={false}
-                      footer={null}
-                      width={"80vw"}
-                      // centered
-                      // mask={false}
-                      bodyStyle={{
-                        padding: 0,
-
-                        backgroundColor: "red"
-                      }}
-                    >
-                      <Carousel autoplay>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto"
-                            }}
-                            src={Test}
-                            alt="cliiques"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto",
-                              width: "70vw"
-                            }}
-                            src={Map}
-                            alt="cliiques"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto",
-                              width: "70vw"
-                            }}
-                            src={Inventory}
-                            alt="cliiques"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto",
-                              width: "70vw"
-                            }}
-                            src={Package}
-                            alt="cliiques"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto",
-                              width: "70vw"
-                            }}
-                            src={Tracking}
-                            alt="cliiques"
-                          />
-                        </div>
-                        <div>
-                          <img
-                            style={{
-                              margin: "0 auto",
-                              width: "70vw"
-                            }}
-                            src={Weighbridge}
-                            alt="cliiques"
-                          />
-                        </div>
-                      </Carousel>
-                    </Modal>
-                  </div>
-                  <div className="project-2">
-                    <img
-                      style={{
-                        width: 500,
-                        border: "1px solid orange"
-                      }}
-                      src={Vino}
-                      alt="vino"
-                    />
-                  </div>
+                  <Project1 />
+                  <Project2 />
                 </PortBody>
               </PortfolioContainer>
             </TabPane>
