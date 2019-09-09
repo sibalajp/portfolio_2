@@ -10,6 +10,7 @@ import "./mainStylesAntd.css";
 
 import Project1 from "../projects/project1";
 import Project2 from "../projects/project2";
+import About from "../about/about";
 
 const { TabPane } = Tabs;
 
@@ -36,17 +37,21 @@ class Main extends Component {
             <TabPane tab="Portfolio" key="1">
               <PortfolioContainer>
                 <PortHeader>
-                  <div className="port-header">Portfolio</div>
+                  <div>Portfolio</div>
                 </PortHeader>
-
-                <PortBody>
+                <div>
                   <Project1 />
                   <Project2 />
-                </PortBody>
+                </div>
               </PortfolioContainer>
             </TabPane>
             <TabPane tab="About Me" key="2">
-              About me
+              <PortfolioContainer>
+                <PortHeader>
+                  <div>About Me</div>
+                </PortHeader>
+                <About />
+              </PortfolioContainer>
             </TabPane>
             <TabPane tab="Contact Me" key="3">
               Contact Me

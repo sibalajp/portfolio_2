@@ -16,5 +16,3 @@ export const PortHeader = styled.div`
   text-align: left;
   font-size: 2rem;
 `;
-
-export const PortBody = styled.div``;

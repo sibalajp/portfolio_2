@@ -6,16 +6,6 @@
   height: 70px !Important;
 }
 
-.project-1 {
-  grid-area: project-1;
-  justify-self: start;
-}
-
-.project-2 {
-  grid-area: project-2;
-  justify-self: start;
-}
-
 .ant-carousel .slick-dots li.slick-active button {
   width: 35px !important;
 }
