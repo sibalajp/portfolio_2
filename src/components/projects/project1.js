@@ -16,7 +16,7 @@ import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.webp";
 import Vendor_Order from "../../img/cliiiques/vendor_orders.webp";
 import Women_Clothing from "../../img/cliiiques/women_clothing.webp";
 
-import { styles } from "./projectStyles";
+import { PortHeader, styles } from "./projectStyles";
 
 class Project1 extends Component {
   state = { visible: false, modalVisible: false };
@@ -29,19 +29,22 @@ class Project1 extends Component {
 
   render() {
     return (
-      <div style={{ display: "inline-block" }}>
+      <div
+        className="project-1"
+        style={{ display: "inline-block", marginRight: 50 }}
+      >
+        <PortHeader>Portfolio</PortHeader>
         <div
-          className="project-1"
           onMouseEnter={() => this.setState({ visible: true })}
           onMouseLeave={() => this.setState({ visible: false })}
-          style={{ ...styles.container, ...{ marginRight: 50 } }}
+          style={{ ...styles.container }}
         >
           <img
             style={{
               width: 500
             }}
             src={Cliiiques}
-            alt="cliiques"
+            alt="Cliiiques"
           />
           <Drawer
             placement="bottom"

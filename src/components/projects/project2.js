@@ -13,7 +13,7 @@ import New from "../../img/vino/new.webp";
 import Receiving from "../../img/vino/receiving.webp";
 import Tracking from "../../img/vino/tracking.webp";
 
-import { styles } from "./projectStyles";
+import { Card, styles } from "./projectStyles";
 
 class Project2 extends Component {
   state = { visible: false, modalVisible: false };
@@ -28,10 +28,9 @@ class Project2 extends Component {
     return (
       <div style={{ display: "inline-block" }}>
         <div
-          className="project-2"
           onMouseEnter={() => this.setState({ visible: true })}
           onMouseLeave={() => this.setState({ visible: false })}
-          style={styles.container}
+          style={{ ...styles.container }}
         >
           <img
             style={{
@@ -63,53 +62,65 @@ class Project2 extends Component {
             <Carousel autoplay>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Distribution} alt="cliiques" />
+                  <img
+                    style={styles.img}
+                    src={Distribution}
+                    alt="Dsitribution"
+                  />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Graph} alt="cliiques" />
+                  <img style={styles.img} src={Graph} alt="Graph" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Map} alt="cliiques" />
+                  <img style={styles.img} src={Map} alt="Map" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Inventory} alt="cliiques" />
+                  <img style={styles.img} src={Inventory} alt="Inventory" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={New} alt="cliiques" />
+                  <img style={styles.img} src={New} alt="New" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Receiving} alt="cliiques" />
+                  <img style={styles.img} src={Receiving} alt="Receiving" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Tracking} alt="cliiques" />
+                  <img style={styles.img} src={Tracking} alt="Tracking" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={BottleDetail} alt="cliiques" />
+                  <img
+                    style={styles.img}
+                    src={BottleDetail}
+                    alt="Bottle Detail"
+                  />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={CreateBottles} alt="cliiques" />
+                  <img
+                    style={styles.img}
+                    src={CreateBottles}
+                    alt="Create Bottles"
+                  />
                 </div>
               </div>
 
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={NewPackage} alt="cliiques" />
+                  <img style={styles.img} src={NewPackage} alt="New Package" />
                 </div>
               </div>
             </Carousel>

@@ -1,28 +1,37 @@
 import React, { Component } from "react";
-import { Content } from "./aboutStyles";
+import { AboutMeHead, Content, PortHeader } from "./aboutStyles";
 
 class About extends Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <Content style={{ marginRight: 50 }}>
-          <div>
-            <h2 style={{ color: "#333333" }}>Hello my name is...</h2>
-          </div>
-          <p>
-            Jon Sibala, I am a full stack developer, with a passion in modern
-            frameworks, and coding awesome applications that work seamless
-            throughout every device. I have over 2 years experience working with
-            start-ups, developing client and server side.
-          </p>
-          <p>
-            I am constantly advancing my knowledge and skills as frameworks are
-            evolving. I am currently advancing on the following technologies:
-          </p>
-          <br />
-          <p>Angular 8 / React.js (Hooks) / Node.js / MongoDB</p>
-          <span className="line"></span>
-        </Content>
+        <div
+          style={{
+            display: "inline-block"
+          }}
+        >
+          <AboutMeHead> About Me</AboutMeHead>
+          <Content className="content-1" style={{ marginRight: 50 }}>
+            <div>
+              <h2 style={{ color: "#333333" }}>Hello my name is...</h2>
+            </div>
+            <p>
+              Jon Sibala, I am a full stack developer, with a passion in modern
+              frameworks, and coding awesome applications that work seamless
+              throughout every device. I have over 2 years experience working
+              with start-ups, developing client and server side.
+            </p>
+            <p>
+              I am constantly advancing my knowledge and skills as frameworks
+              are evolving. I am currently advancing on the following
+              technologies:
+            </p>
+            <br />
+            <p>Angular 8 / React.js (Hooks) / Node.js / MongoDB</p>
+            <span className="line"></span>
+          </Content>
+        </div>
+
         <Content>
           <div>
             <h2 style={{ color: "#333333" }}>Web Stacks</h2>

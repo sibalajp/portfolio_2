@@ -1,10 +1,5 @@
 import React, { Component } from "react";
-import {
-  MainContainer,
-  PortfolioContainer,
-  PortHeader,
-  TabContainer
-} from "./mainStyles";
+import { MainContainer, PortfolioContainer, TabContainer } from "./mainStyles";
 import { Icon, Tabs } from "antd";
 import "./mainStylesAntd.css";
 
@@ -26,29 +21,41 @@ class Main extends Component {
   render() {
     return (
       <MainContainer>
-        <div style={{ paddingTop: "4rem", marginBottom: "4rem" }}>
+        <div style={{ paddingTop: "3.5rem", marginBottom: "3.5rem" }}>
           <h1 style={{ color: "#333333" }}>JON P. SIBALA</h1>
           <h2 style={{ lineHeight: 0, color: "#525866", fontWeight: 300 }}>
             FULL STACK DEVELOPER
           </h2>
-          <Icon type="linkedin" />
-          <Icon type="github" />
-          <Icon type="mail" />
+          <div style={{ marginTop: 20 }}>
+            <a
+              style={{ color: "inherit" }}
+              href="https://www.linkedin.com/in/fight-on-sibalajp/"
+              target="_#"
+            >
+              <Icon style={{ margin: 10, fontSize: 16 }} type="linkedin" />
+            </a>
+            <a
+              style={{ color: "inherit" }}
+              href="https://github.com/sibalajp"
+              target="_#"
+            >
+              <Icon style={{ margin: 10, fontSize: 16 }} type="github" />
+            </a>
+            <a style={{ color: "inherit" }} href="mailto:sibalajp@gmail.com">
+              <Icon style={{ margin: 10, fontSize: 16 }} type="mail" />
+            </a>
+          </div>
         </div>
         <TabContainer>
           <Tabs defaultActiveKey="1" style={{ height: "100%" }}>
             <TabPane tab="Portfolio" key="1">
               <PortfolioContainer>
-                <PortHeader>Portfolio</PortHeader>
                 <Project1 />
                 <Project2 />
               </PortfolioContainer>
             </TabPane>
             <TabPane tab="About Me" key="2">
               <PortfolioContainer>
-                <PortHeader>
-                  <div style={{ paddingLeft: 3 }}>About Me</div>
-                </PortHeader>
                 <About />
               </PortfolioContainer>
             </TabPane>

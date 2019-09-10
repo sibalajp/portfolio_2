@@ -3,7 +3,7 @@
 }
 
 .ant-drawer-content-wrapper {
-  height: 70px !Important;
+  height: 70px !important;
 }
 
 .ant-carousel .slick-dots li.slick-active button {
@@ -24,4 +24,11 @@
 
 .slick-track {
   height: 85vh;
+}
+
+@media only screen and (max-width: 1172px) {
+  .project-1 {
+    margin-bottom: 50px;
+    margin-right: 0 !important;
+  }
 }
