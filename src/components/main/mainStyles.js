@@ -16,3 +16,9 @@ export const PortHeader = styled.div`
   text-align: left;
   font-size: 2rem;
 `;
+
+export const TabContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+`;

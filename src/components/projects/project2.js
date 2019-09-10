@@ -13,6 +13,8 @@ import New from "../../img/vino/new.png";
 import Receiving from "../../img/vino/receiving.png";
 import Tracking from "../../img/vino/tracking.png";
 
+import { styles } from "./projectStyles";
+
 class Project2 extends Component {
   state = { visible: false, modalVisible: false };
 
@@ -29,14 +31,7 @@ class Project2 extends Component {
           className="project-2"
           onMouseEnter={() => this.setState({ visible: true })}
           onMouseLeave={() => this.setState({ visible: false })}
-          style={{
-            width: 500,
-            display: "inline-block",
-            position: "relative",
-
-            overflow: "hidden",
-            boxShadow: "0px 6px 5px 3px rgba(221, 221, 221, 0.58)"
-          }}
+          style={styles.container}
         >
           <img
             style={{
@@ -52,13 +47,10 @@ class Project2 extends Component {
             onClose={this.onClose}
             visible={this.state.visible}
             getContainer={false}
-            style={{
-              position: "absolute"
-            }}
+            style={{ position: "absolute" }}
           >
             <p>JavaScript| React.js (Hooks)| D3</p>
           </Drawer>
-
           <Modal
             visible={this.state.modalVisible}
             onCancel={this.hideModal}
@@ -66,195 +58,64 @@ class Project2 extends Component {
             footer={null}
             width={"80vw"}
             centered
-            bodyStyle={{
-              padding: 0
-            }}
+            bodyStyle={{ padding: 0 }}
           >
             <Carousel autoplay>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Distribution}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Distribution} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Graph}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Graph} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Map}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Map} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Inventory}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Inventory} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={New}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={New} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Receiving}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Receiving} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Tracking}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Tracking} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={BottleDetail}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={BottleDetail} alt="cliiques" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={CreateBottles}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={CreateBottles} alt="cliiques" />
                 </div>
               </div>
 
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={NewPackage}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={NewPackage} alt="cliiques" />
                 </div>
               </div>
             </Carousel>
           </Modal>
         </div>
-        <div
-          style={{
-            marginTop: 20,
-            textAlign: "center",
-            width: 500
-          }}
-        >
-          {" "}
-          Vino
-        </div>
+        <div style={styles.name}> Vino</div>
       </div>
     );
   }

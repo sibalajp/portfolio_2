@@ -16,6 +16,8 @@ import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.png";
 import Vendor_Order from "../../img/cliiiques/vendor_orders.png";
 import Women_Clothing from "../../img/cliiiques/women_clothing.png";
 
+import { styles } from "./projectStyles";
+
 class Project1 extends Component {
   state = { visible: false, modalVisible: false };
 
@@ -32,14 +34,7 @@ class Project1 extends Component {
           className="project-1"
           onMouseEnter={() => this.setState({ visible: true })}
           onMouseLeave={() => this.setState({ visible: false })}
-          style={{
-            width: 500,
-            position: "relative",
-            display: "inline-block",
-            marginRight: 50,
-            overflow: "hidden",
-            boxShadow: "0px 6px 5px 3px rgba(221, 221, 221, 0.58)"
-          }}
+          style={{ ...styles.container, ...{ marginRight: 50 } }}
         >
           <img
             style={{
@@ -55,9 +50,7 @@ class Project1 extends Component {
             onClose={this.onClose}
             visible={this.state.visible}
             getContainer={false}
-            style={{
-              position: "absolute"
-            }}
+            style={{ position: "absolute" }}
           >
             <p>Python | Django | MySQL</p>
           </Drawer>
@@ -68,279 +61,82 @@ class Project1 extends Component {
             footer={null}
             width={"80vw"}
             centered
-            bodyStyle={{
-              padding: 0
-            }}
+            bodyStyle={{ padding: 0 }}
           >
             <Carousel autoplay>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Cart}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Cart} alt="cart" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Checkout}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Checkout} alt="checkout" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Dash_WO_Top}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Dash_WO_Top} alt="Dash_WO_Top" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Dash}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Dash} alt="Dash" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Deals}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Deals} alt="Deals" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={HomeDash}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={HomeDash} alt="HomeDash" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Home}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Home} alt="Home" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Likes}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Likes} alt="Likes" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Orders}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Orders} alt="Order" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Rewards}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Rewards} alt="Rewards" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Vendor_Dash}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Vendor_Dash} alt="Vendor Dash" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Vendor_Order}
-                    alt="cliiques"
-                  />
+                <div style={styles.card}>
+                  <img style={styles.img} src={Vendor_Order} alt="Img" />
                 </div>
               </div>
               <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
+                <div style={styles.card}>
                   <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
+                    style={styles.img}
                     src={Women_Clothing}
-                    alt="cliiques"
-                  />
-                </div>
-              </div>
-              <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Cart}
-                    alt="cliiques"
-                  />
-                </div>
-              </div>
-              <div>
-                <div
-                  style={{
-                    height: 570,
-                    overflowY: "auto"
-                  }}
-                >
-                  <img
-                    style={{
-                      margin: "0 auto",
-                      width: 1000
-                    }}
-                    src={Cart}
-                    alt="cliiques"
+                    alt="Women Clothing"
                   />
                 </div>
               </div>
             </Carousel>
           </Modal>
         </div>
-        <div
-          style={{
-            marginTop: 20,
-            textAlign: "center",
-            width: 500
-          }}
-        >
-          {" "}
-          Cliiiques
-        </div>
+        <div style={styles.name}> Cliiiques</div>
       </div>
     );
   }

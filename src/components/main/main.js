@@ -3,7 +3,8 @@ import {
   MainContainer,
   PortfolioContainer,
   PortBody,
-  PortHeader
+  PortHeader,
+  TabContainer
 } from "./mainStyles";
 import { Carousel, Drawer, Modal, Tabs } from "antd";
 import "./mainStylesAntd.css";
@@ -26,38 +27,31 @@ class Main extends Component {
   render() {
     return (
       <MainContainer>
-        <div
-          style={{
-            width: "90%",
-            height: "100%",
-            margin: "0 auto"
-          }}
-        >
+        <div style={{ paddingTop: "4rem", marginBottom: "4rem" }}>
+          <h1 style={{ color: "#333333" }}>JON P. SIBALA</h1>
+          <h2 style={{ lineHeight: 0, color: "#525866", fontWeight: 300 }}>
+            FULL STACK DEVELOPER
+          </h2>
+        </div>
+        <TabContainer>
           <Tabs defaultActiveKey="1" style={{ height: "100%" }}>
             <TabPane tab="Portfolio" key="1">
               <PortfolioContainer>
-                <PortHeader>
-                  <div>Portfolio</div>
-                </PortHeader>
-                <div>
-                  <Project1 />
-                  <Project2 />
-                </div>
+                <PortHeader>Portfolio</PortHeader>
+                <Project1 />
+                <Project2 />
               </PortfolioContainer>
             </TabPane>
             <TabPane tab="About Me" key="2">
               <PortfolioContainer>
                 <PortHeader>
-                  <div>About Me</div>
+                  <div style={{ paddingLeft: 3 }}>About Me</div>
                 </PortHeader>
                 <About />
               </PortfolioContainer>
             </TabPane>
-            <TabPane tab="Contact Me" key="3">
-              Contact Me
-            </TabPane>
           </Tabs>
-        </div>
+        </TabContainer>
       </MainContainer>
     );
   }
