@@ -2,19 +2,20 @@ import React, { Component } from "react";
 import { Carousel, Drawer, Modal } from "antd";
 import Cliiiques from "../../img/cliiiques.png";
 
-import Cart from "../../img/cliiiques/cart.png";
-import Checkout from "../../img/cliiiques/checkout.png";
-import Dash_WO_Top from "../../img/cliiiques/cliiiques_wo_top.png";
-import Dash from "../../img/cliiiques/cliiiques.png";
-import Deals from "../../img/cliiiques/deals.png";
-import HomeDash from "../../img/cliiiques/home_dashboard.png";
-import Home from "../../img/cliiiques/home.png";
-import Likes from "../../img/cliiiques/likes.png";
-import Orders from "../../img/cliiiques/orders.png";
-import Rewards from "../../img/cliiiques/rewards.png";
-import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.png";
-import Vendor_Order from "../../img/cliiiques/vendor_orders.png";
-import Women_Clothing from "../../img/cliiiques/women_clothing.png";
+import Cart from "../../img/cliiiques/cart.jpg";
+// import Cart from "../../img/cliiiques/cart.svg";
+import Checkout from "../../img/cliiiques/checkout.jpg";
+import Dash_WO_Top from "../../img/cliiiques/cliiiques_wo_top.jpg";
+import Dash from "../../img/cliiiques/cliiiques.jpg";
+import Deals from "../../img/cliiiques/deals.jpg";
+import HomeDash from "../../img/cliiiques/home_dashboard.jpg";
+import Home from "../../img/cliiiques/home.jpg";
+import Likes from "../../img/cliiiques/likes.jpg";
+import Orders from "../../img/cliiiques/orders.jpg";
+import Rewards from "../../img/cliiiques/rewards.jpg";
+import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.jpg";
+import Vendor_Order from "../../img/cliiiques/vendor_orders.jpg";
+import Women_Clothing from "../../img/cliiiques/women_clothing.jpg";
 
 import { styles } from "./projectStyles";
 

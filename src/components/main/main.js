@@ -6,7 +6,7 @@ import {
   PortHeader,
   TabContainer
 } from "./mainStyles";
-import { Carousel, Drawer, Modal, Tabs } from "antd";
+import { Carousel, Drawer, Icon, Modal, Tabs } from "antd";
 import "./mainStylesAntd.css";
 
 import Project1 from "../projects/project1";
@@ -32,6 +32,9 @@ class Main extends Component {
           <h2 style={{ lineHeight: 0, color: "#525866", fontWeight: 300 }}>
             FULL STACK DEVELOPER
           </h2>
+          <Icon type="linkedin" />
+          <Icon type="github" />
+          <Icon type="mail" />
         </div>
         <TabContainer>
           <Tabs defaultActiveKey="1" style={{ height: "100%" }}>
