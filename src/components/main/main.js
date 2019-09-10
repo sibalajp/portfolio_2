@@ -21,7 +21,7 @@ class Main extends Component {
   render() {
     return (
       <MainContainer>
-        <div style={{ paddingTop: "3.5rem", marginBottom: "3.5rem" }}>
+        <div style={{ paddingTop: "3rem", marginBottom: "3rem" }}>
           <h1 style={{ color: "#333333" }}>JON P. SIBALA</h1>
           <h2 style={{ lineHeight: 0, color: "#525866", fontWeight: 300 }}>
             FULL STACK DEVELOPER
