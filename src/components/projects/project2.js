@@ -13,7 +13,7 @@ import New from "../../img/vino/new.webp";
 import Receiving from "../../img/vino/receiving.webp";
 import Tracking from "../../img/vino/tracking.webp";
 
-import { Card, styles } from "./projectStyles";
+import { styles } from "./projectStyles";
 
 class Project2 extends Component {
   state = { visible: false, modalVisible: false };

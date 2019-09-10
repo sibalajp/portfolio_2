@@ -69,17 +69,31 @@ class Project1 extends Component {
             <Carousel autoplay>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Cart} alt="cart" />
+                  <img style={styles.img} src={Home} alt="Home" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Checkout} alt="checkout" />
+                  <img style={styles.img} src={Vendor_Dash} alt="Vendor Dash" />
                 </div>
               </div>
               <div>
                 <div style={styles.card}>
-                  <img style={styles.img} src={Dash_WO_Top} alt="Dash_WO_Top" />
+                  <img style={styles.img} src={Cart} alt="Cart" />
+                </div>
+              </div>
+              <div>
+                <div style={styles.card}>
+                  <img style={styles.img} src={Checkout} alt="Checout" />
+                </div>
+              </div>
+              <div>
+                <div style={styles.card}>
+                  <img
+                    style={styles.img}
+                    src={Dash_WO_Top}
+                    alt="Dash Without Top"
+                  />
                 </div>
               </div>
               <div>
@@ -97,11 +111,7 @@ class Project1 extends Component {
                   <img style={styles.img} src={HomeDash} alt="HomeDash" />
                 </div>
               </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Home} alt="Home" />
-                </div>
-              </div>
+
               <div>
                 <div style={styles.card}>
                   <img style={styles.img} src={Likes} alt="Likes" />
@@ -117,11 +127,7 @@ class Project1 extends Component {
                   <img style={styles.img} src={Rewards} alt="Rewards" />
                 </div>
               </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Vendor_Dash} alt="Vendor Dash" />
-                </div>
-              </div>
+
               <div>
                 <div style={styles.card}>
                   <img style={styles.img} src={Vendor_Order} alt="Img" />

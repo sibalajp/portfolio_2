@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { AboutMeHead, Content, PortHeader } from "./aboutStyles";
+import { AboutMeHead, Content } from "./aboutStyles";
 
 class About extends Component {
   render() {

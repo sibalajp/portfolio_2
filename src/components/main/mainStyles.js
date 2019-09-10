@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
 `;
 
 export const PortfolioContainer = styled.div`
+  display: inline-block;
   margin: 0 auto;
 `;
 
