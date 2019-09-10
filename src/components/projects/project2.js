@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Carousel, Drawer, Modal } from "antd";
-import Vino from "../../img/vino.png";
+import Vino from "../../img/vino.webp";
 
-import BottleDetail from "../../img/vino/bottle_detail.png";
-import CreateBottles from "../../img/vino/create_bottles.png";
-import Distribution from "../../img/vino/distribution.png";
-import Graph from "../../img/vino/graph.png";
-import Inventory from "../../img/vino/inventory.png";
-import Map from "../../img/vino/map.png";
-import NewPackage from "../../img/vino/new_package.png";
-import New from "../../img/vino/new.png";
-import Receiving from "../../img/vino/receiving.png";
-import Tracking from "../../img/vino/tracking.png";
+import BottleDetail from "../../img/vino/bottle_detail.webp";
+import CreateBottles from "../../img/vino/create_bottles.webp";
+import Distribution from "../../img/vino/distribution.webp";
+import Graph from "../../img/vino/graph.webp";
+import Inventory from "../../img/vino/inventory.webp";
+import Map from "../../img/vino/map.webp";
+import NewPackage from "../../img/vino/new_package.webp";
+import New from "../../img/vino/new.webp";
+import Receiving from "../../img/vino/receiving.webp";
+import Tracking from "../../img/vino/tracking.webp";
 
 import { styles } from "./projectStyles";
 

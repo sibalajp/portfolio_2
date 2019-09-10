@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Carousel, Drawer, Modal } from "antd";
-import Cliiiques from "../../img/cliiiques.png";
+import Cliiiques from "../../img/cliiiques.webp";
 
 import Cart from "../../img/cliiiques/cart.webp";
 import Checkout from "../../img/cliiiques/checkout.webp";

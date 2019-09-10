@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import {
   MainContainer,
   PortfolioContainer,
-  PortBody,
   PortHeader,
   TabContainer
 } from "./mainStyles";
-import { Carousel, Drawer, Icon, Modal, Tabs } from "antd";
+import { Icon, Tabs } from "antd";
 import "./mainStylesAntd.css";
 
 import Project1 from "../projects/project1";
