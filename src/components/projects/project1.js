@@ -15,7 +15,7 @@ import Orders from "../../img/cliiiques/orders.jpg";
 import Rewards from "../../img/cliiiques/rewards.jpg";
 import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.jpg";
 import Vendor_Order from "../../img/cliiiques/vendor_orders.jpg";
-import Women_Clothing from "../../img/cliiiques/women_clothing.jpg";
+import Women_Clothing from "../../img/cliiiques/women_clothing.webp";
 
 import { styles } from "./projectStyles";
 
