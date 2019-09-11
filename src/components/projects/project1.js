@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel, Drawer, Modal } from "antd";
+import { Carousel, Drawer, Modal, Icon } from "antd";
 import Cliiiques from "../../img/cliiiques.webp";
 
 import Cart from "../../img/cliiiques/cart.webp";
@@ -17,9 +17,25 @@ import Vendor_Order from "../../img/cliiiques/vendor_orders.webp";
 import Women_Clothing from "../../img/cliiiques/women_clothing.webp";
 
 import { PortHeader, styles } from "./projectStyles";
+import "./projectStyles.css";
 
 class Project1 extends Component {
   state = { visible: false, modalVisible: false };
+
+  constructor(props) {
+    super(props);
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
+    this.carousel = React.createRef();
+  }
+
+  next() {
+    this.carousel.next();
+  }
+
+  previous() {
+    this.carousel.prev();
+  }
 
   hideModal = () => {
     this.setState({
@@ -28,6 +44,13 @@ class Project1 extends Component {
   };
 
   render() {
+    const props = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     return (
       <div
         className="project-1"
@@ -66,7 +89,8 @@ class Project1 extends Component {
             centered
             bodyStyle={{ padding: 0 }}
           >
-            <Carousel autoplay>
+            <Icon type="left-circle" onClick={this.previous} />
+            <Carousel ref={node => (this.carousel = node)} {...props}>
               <div>
                 <div style={styles.card}>
                   <img style={styles.img} src={Home} alt="Home" />
@@ -143,6 +167,7 @@ class Project1 extends Component {
                 </div>
               </div>
             </Carousel>
+            <Icon type="right-circle" onClick={this.next} />
           </Modal>
         </div>
         <div style={styles.name}> Cliiiques</div>
