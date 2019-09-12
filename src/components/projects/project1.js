@@ -35,6 +35,7 @@ class Project1 extends Component {
         style={{ display: "inline-block", marginRight: 50 }}
       >
         <PortHeader>Portfolio</PortHeader>
+
         <div
           onMouseEnter={() => this.setState({ visible: true })}
           onMouseLeave={() => this.setState({ visible: false })}
@@ -204,6 +205,19 @@ class Project1 extends Component {
           </Modal>
         </div>
         <div style={styles.name}> Cliiiques</div>
+        {/* load biggest images to assist with modal image loading time */}
+        <img
+          className="modal-image"
+          style={{ ...styles.img, display: "none" }}
+          src={Home}
+          alt="Home"
+        />
+        <img
+          className="modal-image"
+          style={{ ...styles.img, display: "none" }}
+          src={HomeDash}
+          alt="HomeDash"
+        />
       </div>
     );
   }
