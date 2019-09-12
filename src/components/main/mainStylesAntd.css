@@ -6,13 +6,13 @@
   height: 70px !important;
 }
 
-.ant-carousel .slick-dots li.slick-active button {
+/* .ant-carousel .slick-dots li.slick-active button {
   width: 35px !important;
-}
+} */
 
-.ant-carousel .slick-dots li button {
+/* .ant-carousel .slick-dots li button {
   width: 30px !important;
-}
+} */
 
 .ant-carousel .slick-slide {
   background: #364d79;
@@ -22,9 +22,9 @@
   text-align: center;
 }
 
-.slick-track {
+/* .slick-track {
   height: 85vh;
-}
+} */
 
 @media only screen and (max-width: 1172px) {
   .project-1 {

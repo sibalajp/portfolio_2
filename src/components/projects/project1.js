@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Carousel, Drawer, Modal, Icon } from "antd";
+import { Carousel, Drawer, Modal } from "antd";
 import Cliiiques from "../../img/cliiiques.webp";
 
 import Cart from "../../img/cliiiques/cart.webp";
@@ -16,26 +16,11 @@ import Vendor_Dash from "../../img/cliiiques/vendor_dashboard.webp";
 import Vendor_Order from "../../img/cliiiques/vendor_orders.webp";
 import Women_Clothing from "../../img/cliiiques/women_clothing.webp";
 
-import { PortHeader, styles } from "./projectStyles";
+import { Card, PortHeader, styles } from "./projectStyles";
 import "./projectStyles.css";
 
 class Project1 extends Component {
   state = { visible: false, modalVisible: false };
-
-  constructor(props) {
-    super(props);
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.carousel = React.createRef();
-  }
-
-  next() {
-    this.carousel.next();
-  }
-
-  previous() {
-    this.carousel.prev();
-  }
 
   hideModal = () => {
     this.setState({
@@ -44,13 +29,6 @@ class Project1 extends Component {
   };
 
   render() {
-    const props = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     return (
       <div
         className="project-1"
@@ -89,85 +67,140 @@ class Project1 extends Component {
             centered
             bodyStyle={{ padding: 0 }}
           >
-            <Icon type="left-circle" onClick={this.previous} />
-            <Carousel ref={node => (this.carousel = node)} {...props}>
+            <Carousel autoplay>
               <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Home} alt="Home" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Vendor_Dash} alt="Vendor Dash" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Cart} alt="Cart" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Checkout} alt="Checout" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
+                <Card>
                   <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Home}
+                    alt="Home"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Vendor_Dash}
+                    alt="Vendor Dash"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Cart}
+                    alt="Cart"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Checkout}
+                    alt="Checout"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
                     style={styles.img}
                     src={Dash_WO_Top}
                     alt="Dash Without Top"
                   />
-                </div>
+                </Card>
               </div>
               <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Dash} alt="Dash" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Deals} alt="Deals" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={HomeDash} alt="HomeDash" />
-                </div>
-              </div>
-
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Likes} alt="Likes" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Orders} alt="Order" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Rewards} alt="Rewards" />
-                </div>
-              </div>
-
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Vendor_Order} alt="Img" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
+                <Card>
                   <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Dash}
+                    alt="Dash"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Deals}
+                    alt="Deals"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={HomeDash}
+                    alt="HomeDash"
+                  />
+                </Card>
+              </div>
+
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Likes}
+                    alt="Likes"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Orders}
+                    alt="Order"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Rewards}
+                    alt="Rewards"
+                  />
+                </Card>
+              </div>
+
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Vendor_Order}
+                    alt="Img"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
                     style={styles.img}
                     src={Women_Clothing}
                     alt="Women Clothing"
                   />
-                </div>
+                </Card>
               </div>
             </Carousel>
-            <Icon type="right-circle" onClick={this.next} />
           </Modal>
         </div>
         <div style={styles.name}> Cliiiques</div>

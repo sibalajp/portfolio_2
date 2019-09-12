@@ -1,5 +1,17 @@
-/* @media only screen and (max-width: 1172px) {
-  div > img {
-    width: 200px !important;
+@media only screen and (max-width: 1024px) {
+  .modal-image {
+    width: 500px !important;
   }
-} */
+}
+
+@media only screen and (max-width: 736px) {
+  .modal-image {
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-image {
+    width: 250px !important;
+  }
+}

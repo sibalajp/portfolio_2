@@ -13,7 +13,8 @@ import New from "../../img/vino/new.webp";
 import Receiving from "../../img/vino/receiving.webp";
 import Tracking from "../../img/vino/tracking.webp";
 
-import { styles } from "./projectStyles";
+import { Card, styles } from "./projectStyles";
+import "./projectStyles.css";
 
 class Project2 extends Component {
   state = { visible: false, modalVisible: false };
@@ -61,67 +62,105 @@ class Project2 extends Component {
           >
             <Carousel autoplay>
               <div>
-                <div style={styles.card}>
+                <Card>
                   <img
+                    className="modal-image"
                     style={styles.img}
                     src={Distribution}
                     alt="Dsitribution"
                   />
-                </div>
+                </Card>
               </div>
               <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Graph} alt="Graph" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Map} alt="Map" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Inventory} alt="Inventory" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={New} alt="New" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Receiving} alt="Receiving" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={Tracking} alt="Tracking" />
-                </div>
-              </div>
-              <div>
-                <div style={styles.card}>
+                <Card>
                   <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Graph}
+                    alt="Graph"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Map}
+                    alt="Map"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Inventory}
+                    alt="Inventory"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={New}
+                    alt="New"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Receiving}
+                    alt="Receiving"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={Tracking}
+                    alt="Tracking"
+                  />
+                </Card>
+              </div>
+              <div>
+                <Card>
+                  <img
+                    className="modal-image"
                     style={styles.img}
                     src={BottleDetail}
                     alt="Bottle Detail"
                   />
-                </div>
+                </Card>
               </div>
               <div>
-                <div style={styles.card}>
+                <Card>
                   <img
+                    className="modal-image"
                     style={styles.img}
                     src={CreateBottles}
                     alt="Create Bottles"
                   />
-                </div>
+                </Card>
               </div>
 
               <div>
-                <div style={styles.card}>
-                  <img style={styles.img} src={NewPackage} alt="New Package" />
-                </div>
+                <Card>
+                  <img
+                    className="modal-image"
+                    style={styles.img}
+                    src={NewPackage}
+                    alt="New Package"
+                  />
+                </Card>
               </div>
             </Carousel>
           </Modal>
